@@ -41,7 +41,7 @@ Under the `nntrader/nntrader` directory, there is a json file called `net_config
         * should be a multiple of 300 (seconds)
     * `"coin_number"`
         * number of assets to be traded.
-        * does not include cash (i.e. btc)
+        * does not include cash (i.e. usdt)
     * `"online"`
         * if it is not online, the program will select coins and generate inputs
         from the local database.
@@ -85,7 +85,7 @@ INFO:root:==============================
 ```
         DEBUG:root:==============================
 INFO:root:the step is 1433
-INFO:root:total assets are 17.732482 BTC
+INFO:root:total assets are 17.732482 USDT
 ```
 4. after that, check the result summary of the training in `nntrader/train_package/train_summary.csv`
 5. tune the hyper-parameters based on the summary, and go to 1 again.

@@ -88,10 +88,10 @@ def get_type_list(feature_number):
 
 
 def panel2array(panel):
-    """convert the panel to datatensor (numpy array) without btc
+    """convert the panel to datatensor (numpy array) without usdt
     """
-    without_btc = np.transpose(panel.values, axes=(2, 0, 1))
-    return without_btc
+    without_usdt = np.transpose(panel.values, axes=(2, 0, 1))
+    return without_usdt
 
 
 def count_periods(start, end, period_length):
