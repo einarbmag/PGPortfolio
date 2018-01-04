@@ -53,7 +53,7 @@ def train_all(processes=1, device="cpu"):
     all_subdir.sort()
     pool = []
     for dir in all_subdir:
-        # train only if the log dir does not exist
+        # train only if the log dir does not exist (FRAGILE!)
         if not str.isdigit(dir):
             return
         # NOTE: logfile is for compatibility reason
